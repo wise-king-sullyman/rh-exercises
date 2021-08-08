@@ -1,12 +1,15 @@
 .card {
-  width: 600px;
+  width: 500px;
   height: 300px;
 
   display: grid;
-  grid-template-rows: 10% 10% 15% 10% 20% 10% 15% auto;
-  grid-template-columns: 5% 13% 2% 40% 30% auto;
+  grid-template-rows: 10% 10% 10% 10% 20% 10% 15% auto;
+  grid-template-columns: 5% 12% 5% 30% 40% auto;
 
-  font-family:Arial, Helvetica, sans-serif
+  background-color: white;
+  box-shadow: 0 0 10px #d8d8d8;
+
+  margin: 10px;
 }
 
 .card__image-container {
@@ -21,9 +24,16 @@
   border-radius: 50px
 }
 
-.card__name {
+.card__name-container {
   grid-row: 5 / span 1;
   grid-column: 2 / span 4;
+
+  display: flex;
+  align-items: center;
+}
+
+.card__name {
+  font-size: 30px;
 }
 
 .card__id-container {
@@ -53,5 +63,5 @@
 .card__detail-link {
   color: #3371c8;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
 }
