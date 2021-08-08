@@ -1,15 +1,17 @@
 .card {
-  width: 500px;
-  height: 300px;
+  min-width: 250px;
+  height: 150px;
 
   display: grid;
   grid-template-rows: 10% 10% 10% 10% 20% 10% 15% auto;
-  grid-template-columns: 5% 12% 5% 30% 40% auto;
+  grid-template-columns: 13px 30px 38px auto 125px 13px;
 
   background-color: white;
   box-shadow: 0 0 10px #d8d8d8;
 
   margin: 10px;
+
+  flex-grow: 1;
 }
 
 .card__image-container {
@@ -33,7 +35,7 @@
 }
 
 .card__name {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .card__id-container {
@@ -49,7 +51,7 @@
 }
 
 .card__id {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .card__detail-container {
@@ -63,5 +65,26 @@
 .card__detail-link {
   color: #3371c8;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 16px;
+}
+
+@media (min-width: 550px) {
+  .card {
+    min-width: 500px;
+    height: 300px;
+
+    grid-template-columns: 25px 60px 25px auto 200px 40px;
+  }
+
+  .card__name {
+    font-size: 30px;
+  }
+
+  .card__id {
+    font-size: 20px;
+  }
+
+  .card__detail-link {
+    font-size: 24px;
+  }
 }
