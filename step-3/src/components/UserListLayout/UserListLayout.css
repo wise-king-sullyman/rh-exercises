@@ -1,0 +1,39 @@
+.user-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-layout__heading {
+  margin-left: 10px;
+  font-size: 24px;
+  margin-bottom: 0;
+  width: 90%;
+  text-align: left;
+}
+
+.user-layout__card-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+@media (min-width: 550px) {
+  .user-layout__card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 500px;
+  }
+
+  .user-layout__heading {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1156px) {
+  .user-layout {
+    width: 100%;
+  }
+}
