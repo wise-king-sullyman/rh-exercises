@@ -26,7 +26,7 @@ function Card({ name, id, imageLink }) {
         >
           info
         </span>
-        <a href="" className="card__detail-link">
+        <a href={`/users/${id}`} className="card__detail-link">
           See details
         </a>
       </div>
